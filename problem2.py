@@ -25,4 +25,7 @@ word not in list
 """
 
 fruit = ["apple","cherry","kiwi","apple","banana","strawberry","kiwi","blueberry","kiwi"]
-
+print(fruit)
+x = input("Enter a word from the list: ")
+if x in fruit:
+    print("word not in list")
