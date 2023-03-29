@@ -28,4 +28,11 @@ fruit = ["apple","cherry","kiwi","apple","banana","strawberry","kiwi","blueberry
 print(fruit)
 x = input("Enter a word from the list: ")
 if x in fruit:
+    while x in fruit:
+        fruit.remove(x)
+        print(fruit)
+else:
+    fruit.append(x)
     print("word not in list")
+    print(fruit)
+

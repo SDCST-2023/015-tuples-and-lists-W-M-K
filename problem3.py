@@ -23,5 +23,14 @@ Enter an integer:-1
 
 The largest number you entered is 92
 """
+list = []
+print("Enter up to a maximum of 10 positive integers")
+while True:
+    user_input = int(input("Enter a number (-1 to quit): "))
+    if user_input == -1 :
+        break 
+    list.append(user_input) 
 
+list.sort()
 
+print("The largest number you entered is:", list[-1])
